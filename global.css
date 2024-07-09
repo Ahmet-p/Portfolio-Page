@@ -470,6 +470,7 @@ form input , form textarea {
     body {
         min-height: 100vh;
         margin: 10px;
+        overflow-x: hidden;
     }
     header {
         padding: 15px; 
@@ -565,6 +566,9 @@ form input , form textarea {
 }
 
 @media (max-width: 548px) {
+    body {
+        overflow-x: hidden;
+    }
     header {
         padding: 10px 10px;
         margin-bottom: -50px;
@@ -631,6 +635,9 @@ form input , form textarea {
 }
 
 @media (max-width: 430px){
+    body {
+        overflow-x: hidden;
+    }
     .welcome .welcome-img {
         max-width: 22%;
         height: 100px;
@@ -691,6 +698,9 @@ form input , form textarea {
 }
 
 @media (max-width: 350px) {
+    body{
+        overflow-x: hidden;
+    }
     form {
         padding: 18px;
     }
