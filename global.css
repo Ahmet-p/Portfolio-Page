@@ -703,7 +703,7 @@ form input , form textarea {
         overflow-x: hidden;
     }
     form {
-        padding: 10px;
+        padding: 7px;
     }
     .perImg {
         transform: scale(0.6);
