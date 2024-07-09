@@ -102,13 +102,14 @@
 </div>
 </div>
 
-
+Can't send an empty form
+Make sure you have placed the "name" attribute in all your form elements. Also, to prevent empty form submissions, see the "required" property.
 <div class="contact-container">
 <form action="https://formspree.io/f/meojqylp" method="POST">
     <h3 id="form-title">Let's Work Together</h3>
-    <input type="text" id="name" placeholder="Enter Your Name" required>
-    <input type="email" id="email" placeholder="Enter Your Email" required>
-    <textarea id="message" rows="4" placeholder="What Is Your Message"></textarea>
+    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+    <textarea id="message" name="message" rows="4" placeholder="What Is Your Message"></textarea>
     <button type="submit" id="contact-button">Submit</button>
 </form>
 
