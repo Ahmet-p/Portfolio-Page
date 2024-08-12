@@ -3,121 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmet Pala | Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="global.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <title>Portfolio Page | Ahmet</title>
+    <script src="script.js" defer></script>
 </head>
+<body>
+    <header>
+        <nav>
+            <h1>AP</h1>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/Ahmet-p" target="_blank">Github</a></li>
+                <li><a href="#contactSection" id="hire-me">Hire me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <nav class="left-nav">
-        <h1>AP</h1>
-    </nav>
-    <nav class="right-nav">
-        <a href="#projects">Projects</a>
-        <a href="https://github.com/Ahmet-p" target="_blank">Github</a>
-        <a id="hire-me" href="#contactSection"><span></span><span></span><span></span><span></span>Hire me</a>
-    </nav>
-</header>
-
-
-<main>
-    <div class="welcome">
-        <div class="welcome-text">
-            <h2 id="main1">Hello World...</h2>
-            <p class="main1p">I'm Ahmet Pala, and I build on the web <span class = "highlight">🌐</span></p>
-            <p class="main1p2">As a professional front-end developer, <span id="full-stack"> Soon to become Full-Stack,</span>  I work with a diverse set of languages and specialize in creating exceptional front-end experiences.</p>
-        </div>
-        <img src="images/portfolio-pic.JPG" alt="Placeholder" class="welcome-img">
-    </div>
-
-    <div class="tech-section">
-        <div class="tech">
-            <div class="tech-text">
-                <p>Tech Stack</p>
+    <main>
+        <section class="welcome">
+            <div class="welcome-text">
+                <h2>Hello World...</h2>
+                <p>I'm Ahmet Pala, and I build on the web  <span style="color: var(--accent); font-size: 22px;"><i class="fa-solid fa-laptop-code"></i></span> </p>
+                <p>Professional front-end developer, <span style="color: var(--accent);">Soon to become Full-Stack,</span> working with a diverse set of languages and specializing in creating exceptional front-end experiences.</p>
             </div>
-            <div class="tech-images">
-                <img src="https://clipground.com/images/html5-png-image-10.png" alt="html-logo" width="51px" height="53px" class="perImg html">
-                <img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="css-logo" width="47px" height="49px" class="perImg">
-                <img src="https://freepngdesign.com/content/uploads/images/javascript-logo-7539.png" alt="js-logo" width="63px" height="43px" class="perImg js">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/python-5-logo-png-transparent.png" alt="python-logo" width="38px" height="38px" class="perImg">
-                <img src="https://th.bing.com/th/id/R.d81c04d746224d25d1ae75b62e7561f3?rik=U1LfuH4fG4gBLw&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f09%2fRuby_logo.png&ehk=pdFSeKP%2fGRRuGPLxzDEsary7DOpTReXDqILn%2fjd40Tk%3d&risl=1&pid=ImgRaw&r=0" alt="ruby-logo" width="34px" height="34px" class="perImg">
-                <img src="https://logodix.com/logo/812616.png" alt="git-logo" width="42px" height="42px" class="perImg">
-                <img src="https://nextsoftware.io/files/images/logos/main/reactjs-logo.png" alt="reactjs logo" width="47px" height="47px" class="perImg">
+            <img src="images/portfolio-pic.JPG" alt="Ahmet Pala" class="welcome-img">
+        </section>
+
+        <section class="tech-section">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-database"></i>
+                    <p>SQL</p>
+                </div>
             </div>
+        </section>
+
+        <h2 class="section-title">Projects</h2>
+        <div id="projects">
+            <div class="card">
+                <img src="images/counter.png" alt="CounterX">
+                <div class="card-content">
+                    <h3>CounterX</h3>
+                    <p>A sleek and interactive counter application.</p>
+                    <a href="https://ahmet-p.github.io/CounterX/" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/todo.png" alt="Task-Track">
+                <div class="card-content">
+                    <h3>Task-Track</h3>
+                    <p>An efficient task management system.</p>
+                    <a href="https://ahmet-p.github.io/Task-Track/" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            <!-- add here -->
         </div>
-    </div>
-</main>
 
-<a href="#projects">
-<img id="arrow" src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png" alt="arrow" width="60px" height="80px">
-</a>
+        <section class="about">
+            <h2 class="section-title">About Me</h2><br>
+            <p> <span style="font-size: 20px;">👋Hello!</span> I'm Ahmet Pala, a software developer driven by a passion for turning ideas into reality through code. My journey began with "Learn to Code <span style="color: var(--accent);">Ruby</span>" in 2021, and since then, I've improved my skills in languages such as <span style="color: var(--accent);">HTML</span>, <span style="color: var(--accent);">CSS</span>, <span style="color: var(--accent);"> JavaScript</span>, <span style="color: var(--accent);">Python</span> and more. I specialise in crafting robust, scalable applications that not only meet but exceed user expectations. Whether it's solving complex challenges or creating seamless user experiences, I'm dedicated to delivering solutions that make a difference.<br><br> When I'm not coding, you'll likely find me under the hood of a car, fine-tuning engines and exploring the mechanics that power them—it's this same attention to detail and curiosity that fuels my work in software development.</p>
+        </section>
 
-
-
-<article>
-<h2 id="projectMainTitle"> Projects</h2>
-
-<div id="projects" class="card">
-<!-- ! REPLACE PLACEHOLDER IMAGES WITH PROJECT SNAPSHOT-->
-    <h3 class="projectTitle">CounterX</h3>
-    <a href="https://ahmet-p.github.io/CounterX/" target="_blank"><img src="images/counter.png" width="280px" height="280px" class="snapShot"></a>
-    <p class="project-description">Powered by HTML, CSS & JavaScript</p>
-    <p><ion-icon name="chevron-up-outline"></p>
-        <p class="clickToView">Click to view</p>
-</div>
-
-<div class="card">
-
-    <h3 class="projectTitle">Task-Track</h3>
-    <a href="https://ahmet-p.github.io/Task-Track/" target="_blank"><img src="images/todo.png" width="280px" height="280px"class="snapShot"></a>
-    <p class="project-description">Powered by HTML, CSS & JavaScript</p>
-    <p><ion-icon name="chevron-up-outline"></p>
-        <p class="clickToView">Click to view</p>
-</div>
-
-<div class="card">
-
-    <h3 class="projectTitle">Project 3</h3>
-    <a href=""><img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/63319/Placeholder.png" alt="projectplaceholder" width="280px" height="280px" class="snapShot"></a>
-    <p><ion-icon name="chevron-up-outline"></p>
-        <p class="clickToView">Click to view</p>
-</div>
-
-
-<div class="card">
-
-    <h3 class="projectTitle">Project 4</h3>
-    <a href=""><img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/63319/Placeholder.png" alt="projectplaceholder" width="280px" height="280px" class="snapShot"></a>
-    <p><ion-icon name="chevron-up-outline"></p>
-        <p class="clickToView">Click to view</p>
-</div>
-</article>
-
-
-<div class="about">
-    <h3 id="aboutTitle">About Me</h3>
-    <div class="aboutBox">
-    <p id="aboutP"> <img src="https://www.emojibase.com/resources/img/emojis/apple/1f44b.png" width="30px" height="30px">  Hello! I'm Ahmet Pala, a software developer driven by a passion for turning ideas into reality through code. My journey began with "Learn to Code <span id="rubyColor">Ruby</span>" in 2021, and since then, I've improved my skills in languages such as <span id="htmlColor">HTML</span>, <span id="cssColor">CSS</span>, <span id="jsColor">JavaScript</span>, <span id="pythonColor1">Pyt</span><span id="pythonColor2">hon</span>, and more. I specialise in crafting robust, scalable applications that not only meet but exceed user expectations. Whether it's solving complex challenges or creating seamless user experiences, I'm dedicated to delivering solutions that make a difference.<br><br>
-        When I'm not coding, you'll likely find me under the hood of a car, fine-tuning engines and exploring the mechanics that power them—it's this same attention to detail and curiosity that fuels my work in software development.</p>
-</div>
-</div>
-
-<div id="contactSection" class="contact-container">
-<form action="https://formspree.io/f/meojqylp" method="POST">
-    <h3 id="form-title">Let's build together!</h3>
-    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
-    <textarea id="message" name="message" rows="4" placeholder="What Is Your Message"></textarea>
-    <button type="submit" id="contact-button">Submit</button>
-</form>
-
-</div>
-
-
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <section id="contactSection" class="contact-container">
+            <h2 class="section-title">Let's Build Together!</h2>
+            <form action="https://formspree.io/f/xpwarkpo" method="POST">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                <textarea id="message" name="message" rows="4" placeholder="What Is Your Message"></textarea>
+                <button type="submit" id="contact-button">Submit</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
