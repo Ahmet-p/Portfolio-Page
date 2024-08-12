@@ -267,6 +267,7 @@ form input:focus, form textarea:focus {
 
 @media (max-width: 768px) {
     .welcome {
+        margin-top: 70px;
         flex-direction: column-reverse;
         text-align: center;
     }
