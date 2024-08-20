@@ -113,7 +113,6 @@ main {
     margin-bottom: 2rem;
     text-align: center;
 }
-
 .tech-section {
     background-color: var(--bg-secondary);
     padding: 3rem;
@@ -122,14 +121,12 @@ main {
     position: relative;
     overflow: hidden;
 }
-
 .tech-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
 }
-
 .tech-item {
     background-color: var(--bg-primary);
     padding: 1rem;
@@ -139,49 +136,41 @@ main {
     transition: transform 0.3s ease, background-color 0.3s ease;
     box-shadow: 0 0 15px rgba(0, 200, 255, 0.1);
 }
-
 .tech-item:hover {
     transform: translateY(-10px);
     background-color: var(--bg-secondary);
 }
-
 .tech-item i {
     font-size: 3rem;
     color: var(--accent);
     margin-bottom: 0.5rem;
 }
-
 .tech-item p {
     font-size: 1rem;
     color: var(--text-primary);
     margin: 0;
 }
-
 #projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     scroll-margin-top: 200px;
 }
-
 .card {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
     transform: translateY(-5px);
 }
-
 .card img {
     width: 100%;
     height: 215px;
     object-fit: cover;
     filter: brightness(0.25); 
 }
-
 .card-content {
     position: absolute;
     top: 50%;
@@ -190,22 +179,21 @@ main {
     text-align: center;
     color: var(--text-primary);
 }
-
 .card h3 {
     margin-bottom: 1rem;
     color: var(--accent);
 }
-
 .card p {
     color: var(--text-secondary);
     margin-bottom: 1rem;
 }
-
 .about {
     margin-top: 5rem;
 }
-
-.btn {
+#cvFile {
+    font-family: 'Open Sans', sans-serif;
+}
+.btn, #cvFile {
     display: inline-block;
     background-color: var(--accent);
     color: var(--bg-primary);
@@ -214,19 +202,17 @@ main {
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
 }
-
-.btn:hover {
+.btn:hover, #cvFile:hover {
     background-color: var(--accent-hover);
 }
-
 .contact-container {
     background-color: var(--bg-secondary);
     padding: 3rem;
     border-radius: 10px;
     margin-top: 4rem;
 }
-
 form {
     display: flex;
     flex-direction: column;
@@ -234,7 +220,6 @@ form {
     margin: 0 auto;
     gap: 1rem;
 }
-
 form input, form textarea {
     padding: 0.8rem;
     border: none;
@@ -244,12 +229,10 @@ form input, form textarea {
     box-shadow: 0 0 10px rgba(0, 200, 255, 0.1);
     transition: box-shadow 0.3s ease;
 }
-
 form input:focus, form textarea:focus {
     box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
     outline: none;
 }
-
 #contact-button {
     background-color: var(--accent);
     color: var(--bg-primary);
@@ -260,22 +243,18 @@ form input:focus, form textarea:focus {
     font-weight: 600;
     transition: background-color 0.3s ease;
 }
-
 #contact-button:hover {
     background-color: var(--accent-hover);
 }
-
 @media (max-width: 768px) {
     .welcome {
         margin-top: 70px;
         flex-direction: column-reverse;
         text-align: center;
     }
-
     .welcome-img {
         margin-bottom: 2rem;
     }
-
     .welcome-text {
         max-width: 100%;
     }
