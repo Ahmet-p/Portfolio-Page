@@ -190,6 +190,9 @@ main {
 .about {
     margin-top: 5rem;
 }
+.about p{
+    color: var(--text-secondary);
+}
 #cvFile {
     font-family: 'Open Sans', sans-serif;
 }
